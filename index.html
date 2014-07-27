@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Viciosoft</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Custom CSS styles -->
+    <link rel="stylesheet" href="css/viciosoft.css">
+</head>
+
+<body style="background-image: url('img/clouds.png'); background-repeat: repeat-x">
+
+<div class="screen-container">
+    <div id="main-screen" class="game-screen">
+        <div id="menu">
+            <ul class="main-menu">
+                <li><a href="#" onclick="window.scrollTo(1280,0);">Acerca de Viciosoft</a></li>
+                <li><a href="#" onclick="window.scrollTo(2560,0);">El equipo</a></li>
+                <li><a href="#" onclick="window.scrollTo(3840,0);">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="about-screen" class="game-screen">
+    <a name="acerca"></a>
+        <div id="about-box" class="info-box">
+            <h2>¿Qué es Viciosoft?</h2>
+            <p>Viciosoft es el primer publisher peruano de videojuegos.</p>
+            <p>O eso es lo que aspira a ser. Por ahora, Viciosoft es un experimento. Queremos descubrir los mejores videojuegos desarrollados en el Perú (y, eventualmente, en toda América Latina) y ayudar a sus desarrolladores a llevar estos productos excelentes al mercado global.</p>
+            <p>Estamos elaborando una metodología para trabajar muy de cerca con los equipos de desarrollo para convertir buenos conceptos en grandes productos. Diseñamos herramientas y procesos para fortalecer el aspecto comercial de un proyecto desde su etapa inicial, acompañando al equipo en el análisis del mercado y diversas plataformas y la evaluación de alternativas tecnológicas. Y nos encargamos del proceso de comunicar al mundo el lanzamiento de nuevos proyectos, generando contenido en diversos formatos y conectando nuevos proyectos con nuevas audiencias.</p>
+            <p>En resumen, lo
+        </div>
+    </div>
+
+    <div id="team-screen" class="game-screen">
+    <a name="equipo"></a>
+        <div id="team-box" class="info-box">
+            <h2>El Equipo</h2>
+            <p>Somos un equipo de dos personas que creció jugando y ahora está comprometido con lograr que la industria peruana de videojuegos despegue y se vuelva un éxito international.</p>
+            <p>Tenemos una experiencia combinada en el desarrollo de tecnología, el diseño de juegos, las comunicaciones y el marketing que queremos poner al servicio de nuevos proyectos que quieran fortalecer su dimensión comercial.</p>
+        </div>
+        <div id="felipe-box" class="person-box">
+            <h2>Luis Felipe Cisneros</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="eduardo-box" class="person-box">
+            <h2>Eduardo Marisca</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="avatar-box">
+            <a href="#" onclick="toggle('felipe-box');"><img class="avatar" src="img/luisfelipe.png"></a>
+            <a href="#" onclick="toggle('eduardo-box');"><img class="avatar" src="img/eduardo.png"></a>
+        </div>
+    </div>
+
+    <div id="contact-screen" class="game-screen">
+    <a name="contacto"></a>
+        <div id="contact-box" class="info-box">
+            <h2>Contáctanos</h2>
+            <p>Queremos conocer más sobre tu proyecto y saber cómo podemos ayudarte.</p>
+            <p>Escríbenos a <a href="info@viciosoft.com">info@viciosoft.com</a> y envíanos información sobre lo que estás desarrollando o quedemos para conversar.</p>
+            <p>Tus ideas y tu trabajo son tuyos y respetaremos cualquier expectativa de confidencialidad que requieras de nosotros.</p>
+        </div>
+    </div>
+</div>
+<div class="level-bottom">
+&nbsp
+</div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+<script type="text/javascript">
+var time = new Date().getHours();
+if (time >= 0 && time <=3) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#060647";
+    }
+}
+if (time == 4) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#302F99";
+    }    
+}
+if (time == 5) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#4746AB";
+    }
+}
+if (time == 6) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#7271DE";
+    }
+}
+if (time == 7) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#9291F2";
+    }
+}
+if (time >= 8 && time <= 9) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#B6B6FC";
+    }
+}
+if (time >= 10 && time <= 11) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#c8D5FA";
+    }
+}
+if (time >=12 && time <= 16) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#D9E2FA";
+    }
+}
+if (time >= 17 && time <= 18) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#BFBFE3";
+    }
+}
+if (time == 19) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#9B9BD4";
+    }
+}
+if (time >= 20 && time <= 21) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#515187";
+    }
+}
+if (time >= 22 && time <= 23) {
+    if (document.body) {
+        document.body.style.backgroundColor = "#383873";
+    }
+}
+</script>
+
+<script type="text/javascript">
+function toggle(id) {
+    var element = document.getElementById(id);
+
+    if (element.style.display == 'inline-block') {
+        element.style.display = 'none';
+    }
+    else {
+        document.getElementById('eduardo-box').style.display = 'none';
+        document.getElementById('felipe-box').style.display = 'none';
+        element.style.display = 'inline-block';
+    }
+}
+</script>
+
+</html>
