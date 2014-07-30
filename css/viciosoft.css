@@ -1,9 +1,9 @@
 .layer {
-	width: 5120px;
+	width: 5720px;
 }
 
 .screen-container {
-	width: 5120px;
+	width: 5720px;
 }
 
 .game-screen {
@@ -14,8 +14,8 @@
 }
 
 .level-bottom {
-	height: 100px;
-	width: 5120px;
+	height: 81px;
+	width: 5720px;
 	/* background-color: #5C360D; */
 	position: absolute;
 	bottom: 0px;
@@ -25,7 +25,7 @@
 
 .info-box {
 	position: relative;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.75);
 	padding: 20px;
 }
 
@@ -42,7 +42,8 @@
 
 #about-box {
 	top: 50px;
-	left: 100px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 750px;
 }
 
@@ -62,22 +63,85 @@
 .person-box {
 	position: relative;
 	display: inline-block;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.75);
 	width: 450px;
 	top: 50px;
 	left: 200px;
 	padding: 20px;
 	display: none;
+	z-index: 1000;
 }
 
 #avatar-box {
 	position: absolute;
-	bottom: 85px;
-	left: 3200px;
+	bottom: 65px;
+	left: 3600px;
 }
 
 #cloud-layer {
 	background-image: url('../img/clouds.png');
 	background-repeat: repeat-x;
 	height: 750px;
+}
+
+#logo-block {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#menu {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#menu a {
+	color: #E3911E;
+	line-height: 250%;
+	font-size: 150%;
+	font-family: 'Press Start 2P', cursive;
+}
+
+#menu a:hover {
+	color: #E3C91E;
+	text-decoration: none;
+}
+
+#mail-box {
+	position: absolute;
+	bottom: 25px;
+	left: 4800px;
+}
+
+.nav-arrow {
+	position: absolute;
+	bottom: 45px;
+	height: 20%;
+	width: 12%;
+}
+
+#main-nav-right {
+	left: 1000px;
+}
+
+#about-nav-left {
+	left: 1500px;
+}
+
+#about-nav-right {
+	left: 2500px;
+}
+
+#team-nav-left {
+	left: 3000px;
+}
+
+#team-nav-right {
+	left: 4000px;
+}
+
+#contact-nav-left {
+	left: 4500px;
 }
